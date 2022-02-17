@@ -11,6 +11,8 @@ import commentRouter from './router/comment.js';
 dotenv.config();
 
 
+const PORT = process.env.PORT || 8080;
+
 app.use(cors());
 app.use(bodyParser.json({ limit: '30mb' }));
 
@@ -29,6 +31,6 @@ mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTo
         console.log('err: ' + err);
     })
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
     console.log('Sever is running on port ' + 8080);
 })
