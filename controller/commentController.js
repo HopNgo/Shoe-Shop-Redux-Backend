@@ -13,10 +13,10 @@ export const addComment = async (req, res) => {
         const newComment = {
             body: req.body.body,
             productSlug: req.body.productSlug,
-            username: req.body.username,
+            name: req.body.name,
             userId: req.body.userId,
             parentId: req.body.parentId,
-            photoURL: req.body.photoURL
+            avatarUrl: req.body.avatarUrl
         }
         const newCommentModel = new commentModel(newComment);
         await newCommentModel.save();
