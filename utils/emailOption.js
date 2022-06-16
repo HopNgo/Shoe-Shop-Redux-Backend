@@ -1,8 +1,10 @@
 import nodemailer from "nodemailer";
 
 const adminEmail = "nhom7shopgiay@gmail.com";
-const adminPassword = "nhom7AaA";
+const adminPassword = "tytqbnfnhmyowvyo";
 const mailPort = 587;
+
+//amgdaolrkliusuim
 
 const sendMail = (emailCustomer, subject, htmlContent) => {
   const transporter = nodemailer.createTransport({
@@ -19,7 +21,7 @@ const sendMail = (emailCustomer, subject, htmlContent) => {
   });
   const mailOptions = {
     from: `"Thông báo đặt hàng " <${adminEmail}>`,
-    to: [adminEmail, emailCustomer],
+    to: [adminEmail, emailCustomer].toString(),
     subject: subject,
     html: htmlContent,
   };
