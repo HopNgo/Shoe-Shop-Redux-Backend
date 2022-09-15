@@ -8,6 +8,10 @@
 
 ##### Frontend Demo : https://shoe-shop-app-hopngo.netlify.app/
 
+## Frontend Git
+
+Link : https://github.com/HopNgo/Shoe-Shop-Redux-Frontend.git
+
 ## Clone project and run test
 
 ```
