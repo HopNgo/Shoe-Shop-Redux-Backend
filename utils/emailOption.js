@@ -35,7 +35,10 @@ const sendMail = async (emailCustomer, subject, htmlContent) => {
     },
   });
   const mailOptions = {
-    from: `"Thông báo đặt hàng từ SHOE STORE>`,
+    from: {
+      name: "Shoe Store",
+      address: ADMIN_EMAIL_ADDRESS,
+    },
     to: [ADMIN_EMAIL_ADDRESS, emailCustomer].toString(),
     subject: subject,
     html: htmlContent,
